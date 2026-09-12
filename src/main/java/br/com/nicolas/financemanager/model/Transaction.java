@@ -29,6 +29,7 @@ public class Transaction {
         return type==TransactionType.EXPENSE;
     }
 
+    // esse metodo abaixo serve para fazer entrada e saida de valores no BigDecimal
     public BigDecimal getSignedValue(){
         if (isIncome()) {
             return value;            
