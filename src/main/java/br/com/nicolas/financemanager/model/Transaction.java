@@ -21,5 +21,8 @@ public class Transaction {
         return type;
     }
 
+    public Boolean isIncome(){
+        return type==TransactionType.INCOME;
+    }
     
 }

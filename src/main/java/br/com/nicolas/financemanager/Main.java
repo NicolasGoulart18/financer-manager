@@ -8,5 +8,6 @@ public class Main {
         System.out.println(salary.getDescription());
         System.out.println(salary.getValue());
         System.out.println(salary.getType());
+        System.out.println(salary.isIncome());
     }
 }
