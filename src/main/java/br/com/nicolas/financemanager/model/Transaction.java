@@ -11,6 +11,15 @@ public class Transaction {
         this.value = value;
         this.type = type;
     }
+    public String getDescription() {
+        return description;
+    }
+    public BigDecimal getValue() {
+        return value;
+    }
+    public TransactionType getType() {
+        return type;
+    }
 
     
 }
