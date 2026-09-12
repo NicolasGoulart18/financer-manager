@@ -4,11 +4,15 @@ import java.util.List;
 import br.com.nicolas.financemanager.model.Transaction;
 
 import java.util.ArrayList;
-public class Financemanager {
+// aq vamos usar ArrayList e List para armazenar as transações.Ela elimina a necessidade de deixar cada transação guardada em uma variável solta no Main; o FinanceManager centraliza todas dentro da lista.
+public class FinanceManager {
     private List<Transaction>transactions;
 
-    public Financemanager() {
+    public FinanceManager() {
         this.transactions=new ArrayList<>();
     }
     
+    public void addTransaction(Transaction transactions){
+        this.transactions.add(transactions);
+    }
 }
