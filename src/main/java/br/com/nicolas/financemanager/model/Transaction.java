@@ -25,4 +25,8 @@ public class Transaction {
         return type==TransactionType.INCOME;
     }
     
+    public Boolean isExpense(){
+        return type==TransactionType.EXPENSE;
+    }
+
 }

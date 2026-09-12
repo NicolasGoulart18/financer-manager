@@ -4,10 +4,10 @@ import br.com.nicolas.financemanager.model.Transaction;
 import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
-        Transaction salary= new Transaction("salario", new BigDecimal(2500), TransactionType.INCOME);
+        Transaction salary= new Transaction("salario", new BigDecimal(2500), TransactionType.EXPENSE);
         System.out.println(salary.getDescription());
         System.out.println(salary.getValue());
         System.out.println(salary.getType());
-        System.out.println(salary.isIncome());
+        System.out.println(salary.isExpense());
     }
 }
