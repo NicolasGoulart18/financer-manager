@@ -15,4 +15,11 @@ public class FinanceManager {
     public void addTransaction(Transaction transactions){
         this.transactions.add(transactions);
     }
+
+    public void listTransactions(){
+        for(Transaction transaction:transactions){
+            System.out.println(transaction);
+        }
+    }
+
 }
