@@ -1,6 +1,6 @@
 package br.com.nicolas.financemanager.model;
-
 import java.math.BigDecimal;
+
 
 public class Transaction {
     private String description;
@@ -27,6 +27,13 @@ public class Transaction {
     
     public Boolean isExpense(){
         return type==TransactionType.EXPENSE;
+    }
+
+    public BigDecimal getSignedValue(){
+        if (isIncome()) {
+            return value;            
+        }
+         return value.negate();
     }
 
 }
