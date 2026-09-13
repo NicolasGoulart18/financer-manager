@@ -21,11 +21,11 @@ public class Transaction {
         return type;
     }
 
-    public Boolean isIncome(){
+    public boolean isIncome(){
         return type==TransactionType.INCOME;
     }
     
-    public Boolean isExpense(){
+    public boolean isExpense(){
         return type==TransactionType.EXPENSE;
     }
 
