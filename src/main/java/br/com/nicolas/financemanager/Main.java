@@ -14,5 +14,7 @@ public class Main {
         manager.addTransaction(spotify);
         manager.listTransactions();
         System.out.println("Balance: "+manager.calculateBalance());
+        System.out.println("Income: "+manager.calculateTotalByType(TransactionType.INCOME));
+        System.out.println("Expense: "+manager.calculateTotalByType(TransactionType.EXPENSE));
     }
 }

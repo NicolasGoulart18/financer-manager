@@ -41,7 +41,7 @@ public class Transaction {
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return "Nome: "+description+" Valor: "+getSignedValue()+" tipo: "+type;
+        return description+"| Valor: "+getSignedValue()+" tipo: "+type;
     }
 
 }

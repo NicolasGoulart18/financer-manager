@@ -1,7 +1,7 @@
 package br.com.nicolas.financemanager.service;
 
 import br.com.nicolas.financemanager.model.Transaction;
-
+import br.com.nicolas.financemanager.model.TransactionType;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,4 +33,15 @@ public class FinanceManager {
 
         return balance;
     }
+
+    public BigDecimal calculateTotalByType(TransactionType requestedType){
+        BigDecimal total = BigDecimal.ZERO;
+        for (Transaction transaction : transactions) {
+            if(transaction.getType()==requestedType){
+                total = total.add(transaction.getValue());
+            }
+        }
+        return total;
+    }
+
 }
