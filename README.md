@@ -1,4 +1,4 @@
-# Finance Manager Java
+# Money Manager Java
 
 Terminal application built in Java to practice the foundations required before Spring Boot.
 
