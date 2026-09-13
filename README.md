@@ -31,6 +31,14 @@ src/main/java/br/com/nicolas/financemanager/
 - `FinanceManager` stores and manages transactions in memory.
 - `Main` starts the application and demonstrates the current flow.
 
+## Running the project
+
+1. Open the repository in VS Code with the Java extension installed.
+2. Open `Main.java`.
+3. Run the `main` method.
+
+The application prints the transactions, balance, income total and expense total in the terminal.
+
 ## Technologies
 
 - Java
