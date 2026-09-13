@@ -14,6 +14,23 @@ The first version keeps data in memory and focuses on a small but functional fin
 - Calculate totals by transaction type
 - Find a transaction by its description
 
+## Project structure
+
+```text
+src/main/java/br/com/nicolas/financemanager/
+├── Main.java
+├── model/
+│   ├── Transaction.java
+│   └── TransactionType.java
+└── service/
+    └── FinanceManager.java
+```
+
+- `Transaction` represents an income or expense.
+- `TransactionType` defines the available transaction types.
+- `FinanceManager` stores and manages transactions in memory.
+- `Main` starts the application and demonstrates the current flow.
+
 ## Technologies
 
 - Java
