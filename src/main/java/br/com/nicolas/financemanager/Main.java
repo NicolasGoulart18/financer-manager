@@ -8,8 +8,11 @@ public class Main {
         FinanceManager manager=new FinanceManager();
         Transaction salary= new Transaction("Salario", new BigDecimal("2500.00"), TransactionType.INCOME);
         Transaction netflix = new Transaction("Netflix", new BigDecimal("50.00"), TransactionType.EXPENSE);
+        Transaction spotify = new Transaction("Spotify", new BigDecimal("40.00"), TransactionType.EXPENSE);
         manager.addTransaction(salary);
         manager.addTransaction(netflix);
+        manager.addTransaction(spotify);
         manager.listTransactions();
+        System.out.println("Balance: "+manager.calculateBalance());
     }
 }
