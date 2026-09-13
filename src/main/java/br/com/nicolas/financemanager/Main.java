@@ -9,6 +9,7 @@ public class Main {
         Transaction salary= new Transaction("Salario", new BigDecimal("2500.00"), TransactionType.INCOME);
         Transaction netflix = new Transaction("Netflix", new BigDecimal("50.00"), TransactionType.EXPENSE);
         Transaction spotify = new Transaction("Spotify", new BigDecimal("40.00"), TransactionType.EXPENSE);
+       
         manager.addTransaction(salary);
         manager.addTransaction(netflix);
         manager.addTransaction(spotify);
@@ -16,5 +17,11 @@ public class Main {
         System.out.println("Balance: "+manager.calculateBalance());
         System.out.println("Income: "+manager.calculateTotalByType(TransactionType.INCOME));
         System.out.println("Expense: "+manager.calculateTotalByType(TransactionType.EXPENSE));
+
+        Transaction foundTransaction= manager.findTransactionByDescription("Netflix");
+        if (foundTransaction!=null) {
+            System.out.println(foundTransaction);
+        }
+
     }
 }

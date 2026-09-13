@@ -44,4 +44,14 @@ public class FinanceManager {
         return total;
     }
 
+
+    public Transaction findTransactionByDescription(String description){
+        for (Transaction transaction : transactions) {
+            if (transaction.getDescription().equals(description)) {
+                return transaction;
+            }
+        }
+        return null;
+    }
+
 }
