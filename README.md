@@ -1,13 +1,22 @@
 # Finance Manager Java
 
-Projeto criado para estudar Java de forma prática, evoluindo de uma aplicação de terminal até uma API com Spring Boot.
+Terminal application built in Java to practice the foundations required before Spring Boot.
 
-## Objetivo inicial
+## Version 1
 
-Cadastrar receitas e despesas, listar transações e mostrar o saldo atual.
+The first version keeps data in memory and focuses on a small but functional financial flow.
 
-## Tecnologias iniciais
+## Current features
+
+- Register income and expenses
+- List registered transactions
+- Calculate the current balance
+- Calculate totals by transaction type
+- Find a transaction by its description
+
+## Technologies
 
 - Java
-- Aplicação de terminal
-- Dados em memória
+- Java Collections with `List` and `ArrayList`
+- `BigDecimal` for financial values
+- Terminal application
