@@ -40,7 +40,6 @@ public class Transaction {
     // Usando toString para quando o objeto de despesa ou receita for instanciado ao mostrar ele apareca formatado
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return description+"| Valor: "+getSignedValue()+" tipo: "+type;
     }
 
