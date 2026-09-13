@@ -14,8 +14,8 @@ public class FinanceManager {
         this.transactions = new ArrayList<>();
     }
 
-    public void addTransaction(Transaction transactions) {
-        this.transactions.add(transactions);
+    public void addTransaction(Transaction transaction) {
+        this.transactions.add(transaction);
     }
 
     public void listTransactions() {
