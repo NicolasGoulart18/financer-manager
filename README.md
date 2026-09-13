@@ -39,6 +39,24 @@ src/main/java/br/com/nicolas/financemanager/
 
 The application prints the transactions, balance, income total and expense total in the terminal.
 
+## Learning progress
+
+Completed in this version:
+
+- Classes, objects, constructors and encapsulation
+- Enums
+- Methods and return values
+- Association between `FinanceManager` and `Transaction`
+- `List`, `ArrayList` and `for-each`
+- `BigDecimal` for financial calculations
+
+Next steps:
+
+- Continue collection operations and validations
+- Handle errors and invalid operations with exceptions
+- Add persistence with SQL and JDBC
+- Create tests and later evolve the project into a Spring Boot API
+
 ## Technologies
 
 - Java
